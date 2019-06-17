@@ -15,6 +15,7 @@
 		3C3FD0A122B4EA5C00230C36 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C3FD0A022B4EA5C00230C36 /* main.m */; };
 		3C3FD0AB22B4EA5C00230C36 /* TestSaveLogTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C3FD0AA22B4EA5C00230C36 /* TestSaveLogTests.m */; };
 		3C3FD0B622B4EA5C00230C36 /* TestSaveLogUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C3FD0B522B4EA5C00230C36 /* TestSaveLogUITests.m */; };
+		D7C4213B16C74A4E36AA7B54 /* libPods-TestSaveLog.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A02043D986F21992C38446A /* libPods-TestSaveLog.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A02043D986F21992C38446A /* libPods-TestSaveLog.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestSaveLog.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C3FD08E22B4EA5900230C36 /* TestSaveLog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestSaveLog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C3FD09122B4EA5900230C36 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3C3FD09222B4EA5900230C36 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +53,10 @@
 		3C3FD0B122B4EA5C00230C36 /* TestSaveLogUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestSaveLogUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C3FD0B522B4EA5C00230C36 /* TestSaveLogUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestSaveLogUITests.m; sourceTree = "<group>"; };
 		3C3FD0B722B4EA5C00230C36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C3FD0C422B4EEB300230C36 /* TextSaveLogPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextSaveLogPrefixHeader.pch; sourceTree = "<group>"; };
+		3C3FD0C522B4EFCC00230C36 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		4EC2E8971C6E1F60BF38ABCA /* Pods-TestSaveLog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestSaveLog.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestSaveLog/Pods-TestSaveLog.release.xcconfig"; sourceTree = "<group>"; };
+		95F75CD7217F0B0620BEC405 /* Pods-TestSaveLog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestSaveLog.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestSaveLog/Pods-TestSaveLog.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7C4213B16C74A4E36AA7B54 /* libPods-TestSaveLog.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +85,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		350D51B7F62E565932FC1753 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				95F75CD7217F0B0620BEC405 /* Pods-TestSaveLog.debug.xcconfig */,
+				4EC2E8971C6E1F60BF38ABCA /* Pods-TestSaveLog.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		3C3FD08522B4EA5900230C36 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +101,8 @@
 				3C3FD0A922B4EA5C00230C36 /* TestSaveLogTests */,
 				3C3FD0B422B4EA5C00230C36 /* TestSaveLogUITests */,
 				3C3FD08F22B4EA5900230C36 /* Products */,
+				350D51B7F62E565932FC1753 /* Pods */,
+				52EC89027E896966AC9E4F61 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,11 +123,13 @@
 				3C3FD09222B4EA5900230C36 /* AppDelegate.m */,
 				3C3FD09422B4EA5900230C36 /* ViewController.h */,
 				3C3FD09522B4EA5900230C36 /* ViewController.m */,
+				3C3FD0C522B4EFCC00230C36 /* Header.h */,
 				3C3FD09722B4EA5900230C36 /* Main.storyboard */,
 				3C3FD09A22B4EA5C00230C36 /* Assets.xcassets */,
 				3C3FD09C22B4EA5C00230C36 /* LaunchScreen.storyboard */,
 				3C3FD09F22B4EA5C00230C36 /* Info.plist */,
 				3C3FD0A022B4EA5C00230C36 /* main.m */,
+				3C3FD0C422B4EEB300230C36 /* TextSaveLogPrefixHeader.pch */,
 			);
 			path = TestSaveLog;
 			sourceTree = "<group>";
@@ -132,6 +152,14 @@
 			path = TestSaveLogUITests;
 			sourceTree = "<group>";
 		};
+		52EC89027E896966AC9E4F61 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A02043D986F21992C38446A /* libPods-TestSaveLog.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,6 +167,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3C3FD0BA22B4EA5C00230C36 /* Build configuration list for PBXNativeTarget "TestSaveLog" */;
 			buildPhases = (
+				E92A4EDBDE43A725F1D25A6A /* [CP] Check Pods Manifest.lock */,
 				3C3FD08A22B4EA5900230C36 /* Sources */,
 				3C3FD08B22B4EA5900230C36 /* Frameworks */,
 				3C3FD08C22B4EA5900230C36 /* Resources */,
@@ -256,6 +285,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E92A4EDBDE43A725F1D25A6A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TestSaveLog-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3C3FD08A22B4EA5900230C36 /* Sources */ = {
@@ -433,9 +487,12 @@
 		};
 		3C3FD0BB22B4EA5C00230C36 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95F75CD7217F0B0620BEC405 /* Pods-TestSaveLog.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/TestSaveLog/TextSaveLogPrefixHeader.pch";
 				INFOPLIST_FILE = TestSaveLog/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -449,9 +506,12 @@
 		};
 		3C3FD0BC22B4EA5C00230C36 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EC2E8971C6E1F60BF38ABCA /* Pods-TestSaveLog.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/TestSaveLog/TextSaveLogPrefixHeader.pch";
 				INFOPLIST_FILE = TestSaveLog/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

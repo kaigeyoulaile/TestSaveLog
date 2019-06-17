@@ -1,0 +1,14 @@
+//
+//  TextSaveLogPrefixHeader.pch
+//  TestSaveLog
+//
+//  Created by 吴凯 on 2019/6/15.
+//  Copyright © 2019年 吴凯. All rights reserved.
+//
+
+#ifndef TextSaveLogPrefixHeader_pch
+#define TextSaveLogPrefixHeader_pch
+
+#import "Header.h"
+
+#endif /* TextSaveLogPrefixHeader_pch */
